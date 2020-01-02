@@ -9,6 +9,7 @@ let connection = mysql.createConnection({
     password: 'Hammerdick1',
     database: 'bamazonDB'
 });
+
 connection.connect(function (err) {
     if (err) throw err;
     console.log("Welcome to my Bamazon store");
@@ -39,6 +40,7 @@ function start() {
         const addS = value => {
 
             // ternary function, the question mark is the if and the colon is the else
+
              return value > 1 ? 's' : '';
         };
         inquirer
